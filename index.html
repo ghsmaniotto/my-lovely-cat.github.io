@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,11 +16,11 @@
     h4,
     h5,
     h6 {
-      font-family: "Montserrat", sans-serif
+      font-family: "Montserrat", sans-serif;
     }
   
     .w3-row-padding img {
-      margin-bottom: 12px
+      margin-bottom: 12px;
     }
   
     /* Set the width of the sidebar to 120px */
@@ -30,39 +31,18 @@
   
     /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
     #main {
-      margin-left: 120px
+      margin-left: 120px;
     }
   
     /* Remove margins from "page content" on small screens */
     @media only screen and (max-width: 600px) {
       #main {
-        margin-left: 0
+        margin-left: 0;
       }
     }
   </style>
 
   <body class="w3-black">
-    <!-- Icon Bar (Sidebar - hidden on small screens) -->
-    <!-- <nav cla="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center"> -->
-      <!-- Avatar image in top left corner -->
-      <!-- <img src="assets/ana_lua_at_tp_window.jpg" style="width:100%">
-      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-        <i class="fa fa-home w3-xxlarge"></i>
-        <p>HOME</p>
-      </a>
-      <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <i class="fa fa-user w3-xxlarge"></i>
-        <p>ABOUT</p>
-      </a>
-      <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <i class="fa fa-eye w3-xxlarge"></i>
-        <p>PHOTOS</p>
-      </a>
-      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <i class="fa fa-envelope w3-xxlarge"></i>
-        <p>CONTACT</p>
-      </a>
-    </nav> -->
   
     <!-- Navbar on small screens (Hidden on medium and large screens) -->
     <div class="w3-top" id="myNavbar">
@@ -82,7 +62,54 @@
         <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> LOST.</h1>
         <p>Please call my humans, <br />they’re lost without me!</p>
         <img src="assets/ana_lua_at_tp_window.jpg" alt="boy" class="w3-image" width="992" height="1108">
+        <p class="w3-large">I know I am pretty but you can't keep me! Please help me to go home!</p>
       </header>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+      <h2 class="w3-text-light-grey">My Parents Contact</h2>
+      <p class="w3-large">Call my mom, she is ugly crying!!</p>
+      <p class="w3-large">You can also call my dad who is obvvious crying as well.</p>
+      <hr style="width:200px" class="w3-opacity">
+    
+      <div class="w3-col" style="box-sizing: border-box; width: 100%;">
+        <div class="w3-center" style="width: 50%; float: left; font-size: small;">
+          <p class="w3-wide w3-large">Mom</p>
+          <img src="assets/mom.jpg"
+            style="width:100%; padding-right: 5px; max-width: 100px; max-height: 300px; align-self: center;">
+          <p>
+            <i class="fa fa-map-marker fa-fw w3-text-white w3-small"></i><br />
+            Porto Alegre, RS, Brazil
+          </p>
+          <p>
+            <i class="fa fa-phone fa-fw w3-text-white w3-small"></i><br />
+            +55 51 9981-2786
+          </p>
+          <p style="word-wrap: break-word;">
+            <i class="fa fa-envelope fa-fw w3-text-white w3-small"> </i><br />
+            tassi_sf@hotmail.com
+          </p>
+        </div>
+        <div class="w3-center" style="width: 50%; float: right; font-size: small;">
+          <p class="w3-wide w3-large">Dad</p>
+          <img src="assets/dad.jpg"
+            style="width:100%; padding-left: 5px; max-width: 100px; max-height: 300px; align-self: center;">
+          <p>
+            <i class="fa fa-map-marker fa-fw w3-text-white w3-small"></i><br />
+            Porto Alegre, RS, Brazil
+          </p>
+          <p>
+            <i class="fa fa-phone fa-fw w3-text-white w3-small"></i><br />
+            +55 55 996008690
+          </p>
+          <p style="word-wrap: break-word;">
+            <i class="fa fa-envelope fa-fw w3-text-white w3-small"></i><br />
+            ghsmaniotto@gmail.com
+          </p>
+        </div>
+      </div>
+      <!-- End Contact Section -->
     </div>
 
     <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
@@ -136,48 +163,6 @@
         <!-- End photo grid -->
       </div>
       <!-- End Portfolio Section -->
-    </div>
-
-    <!-- Contact Section -->
-    <div class="w3-text-grey w3-content" id="contact">
-      <h2 class="w3-text-light-grey">My Parents Contact</h2>
-      <hr style="width:200px" class="w3-opacity">
-
-      <div class="w3-col" style="box-sizing: border-box; width: 100%;">
-        <div class="w3-center" style="width: 50%; float: left; font-size: small;"> 
-          <p class="w3-wide w3-large">Mom</p>
-          <img src="assets/mom.jpg" style="width:100%; padding-right: 5px; max-width: 100px; max-height: 300px; align-self: center;">
-          <p>
-            <i class="fa fa-map-marker fa-fw w3-text-white w3-small"></i><br /> 
-            Porto Alegre, RS, Brazil
-          </p>
-          <p>
-            <i class="fa fa-phone fa-fw w3-text-white w3-small"></i><br /> 
-            +55 51 9981-2786 
-          </p>
-          <p style="word-wrap: break-word;">
-            <i class="fa fa-envelope fa-fw w3-text-white w3-small"> </i><br />
-            tassi_sf@hotmail.com
-          </p>
-        </div>
-        <div class="w3-center" style="width: 50%; float: right; font-size: small;">
-          <p class="w3-wide w3-large">Dad</p>
-          <img src="assets/dad.jpg" style="width:100%; padding-left: 5px; max-width: 100px; max-height: 300px; align-self: center;">
-          <p>
-            <i class="fa fa-map-marker fa-fw w3-text-white w3-small"></i><br />
-             Porto Alegre, RS, Brazil
-          </p>
-          <p>
-            <i class="fa fa-phone fa-fw w3-text-white w3-small"></i><br />
-             +55 55 996008690
-          </p>
-          <p style="word-wrap: break-word;">
-            <i class="fa fa-envelope fa-fw w3-text-white w3-small"></i><br />
-            ghsmaniotto@gmail.com
-          </p>
-        </div>
-      </div>
-      <!-- End Contact Section -->
     </div>
   </body>
 </html>
